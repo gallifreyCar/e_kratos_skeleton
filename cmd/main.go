@@ -33,7 +33,8 @@ var (
 			defer cancel()
 
 			// 初始化gin
-			r := &gin.Engine{}
+			//todo 补充gin的初始化
+			r := gin.Default()
 
 			// 初始化app，调用的是 wire_gen.go 中的 initApp
 			app, cleanup, err := wireApp()
